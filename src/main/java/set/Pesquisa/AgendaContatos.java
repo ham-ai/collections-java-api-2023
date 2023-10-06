@@ -12,6 +12,7 @@ public class AgendaContatos {
     }
 
     public void adicionarContato(String nome, int numero){
+
         contatoSet.add(new Contato(nome, numero));
     }
 
@@ -65,7 +66,7 @@ public class AgendaContatos {
         agendaContatos.exibirContatos();
 
         //Pesquisando contatos pelo nome
-        System.out.println(agendaContatos.pesquisarPorNome("Maria"));
+         System.out.println(agendaContatos.pesquisarPorNome("Maria"));
 
         //Atualizando o número de um contato
         Contato contatoAtualizado = agendaContatos.atualizarNumeroContato("Marcos", 48653);
